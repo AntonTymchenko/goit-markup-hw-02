@@ -1,98 +1,85 @@
-/*вторичный текста черный  = #212121*/
-/*цвет основного цвет сероватый =  #757575*/
-/*цвет активности синий =#2196F3*/
-/* цвет фторичного фона серый = #e5e5e5 */
 :root {
-  --main-text-color: #757575;
   --title-text-color: #212121;
-  --active-text-color: #2196f3;
-  --main-white-color: #ffffff;
-  --footer-bg-color: #2f303a;
+  --link-text-color: #2196f3;
+  --main-text-color: #757575;
+  --bg-white-color: #ffffff;
+  --bg-footer-color: #2f303a;
 }
+body ul {
+  background-color: var(--bg-white-color);
+  color: var(--main-text-color);
+  list-style: none;
+  text-decoration: none;
+}
+/* nav logo */
 
-body {
-  background-color: var(--main-white-color);
-  color: var(--main-text-color); /*задаем основной цвеи текста*/
-}
-/* стили для логотипа */
-.logo {
+header .logo {
   color: var(--title-text-color);
   text-decoration: none;
 }
-.logo-web {
-  color: var(--active-text-color);
+.logo .logo-web {
+  color: var(--link-text-color);
 }
 .logo .logo-studio:hover,
 .logo .logo-studio:focus {
-  color: var(--active-text-color);
+  color: var(--link-text-color);
 }
-.list {
-  /*сброс точек в списках*/
-  list-style: none;
-}
-/* сайт нав */
 
 .site-nav .link {
   color: var(--title-text-color);
+  text-decoration: none;
 }
-
 .site-nav .link:hover,
 .site-nav .link:focus {
-  color: var(--active-text-color);
+  color: var(--link-text-color);
+  text-decoration: none;
 }
-
-/* для определения текущегоцвета страницы на которой находимся в данныъ момент */
-.site-nav .link.current {
-  color: var(--active-text-color);
-}
-
-/* address-nav tel email */
 .address-nav .link {
   color: var(--main-text-color);
   text-decoration: none;
+  list-style: none;
 }
 .address-nav .link:hover,
 .address-nav .link:focus {
-  color: var(--active-text-color);
+  color: var(--link-text-color);
 }
-/* section */
-.section-title {
+/* hero */
+.hero .hero-title {
   color: var(--title-text-color);
 }
-/* feature */
-.feature-list .title {
+.hero .button {
+  background-color: var(--link-text-color);
+  color: var(--bg-white-color);
+}
+/* features */
+.section .title {
   color: var(--title-text-color);
 }
-/* BUTTON */
-.button {
-  color: var(--main-white-color);
-  background-color: var(--active-text-color);
+.section .section-title {
+  color: var(--title-text-color);
 }
 /* footer */
-.footer {
-  color: var(--main-white-color);
-  background-color: var(--footer-bg-color);
+footer {
+  background-color: var(--bg-footer-color);
 }
-.footer .logo-studio {
-  color: var(--main-white-color);
+
+/* .address-list {
+  background-color: var(--bg-footer-color);
 }
-.footer .address-list {
-  text-decoration: none;
-}
-.footer .link {
-  color: var(--main-text-color);
-}
-.footer .link:hover,
-.footer .link:focus {
-  color: var(--active-text-color);
+footer .logo-studio {
+  color: var(--bg-white-color);
 }
 .address-list {
   list-style: none;
+  text-decoration: none;
+}
+.address-list .link {
+  color: var(--main-text-color);
 }
 .address-list .map {
-  color: var(--main-white-color);
+  color: var(--bg-white-color);
 }
-.address-list .map:hover,
-.address-list .map:focus {
-  color: var(--active-text-color);
-}
+.address-list .link:hover,
+.address-list .link:focus {
+  color: var(--link-text-color);
+} */
