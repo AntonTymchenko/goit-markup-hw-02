@@ -5,14 +5,18 @@
   --bg-white-color: #ffffff;
   --bg-footer-color: #2f303a;
 }
-body ul {
+body {
   background-color: var(--bg-white-color);
   color: var(--main-text-color);
-  list-style: none;
-  text-decoration: none;
 }
 /* nav logo */
-
+.link,
+.map {
+  text-decoration: none;
+}
+.list {
+  list-style: none;
+}
 header .logo {
   color: var(--title-text-color);
   text-decoration: none;
@@ -63,9 +67,6 @@ footer {
   background-color: var(--bg-footer-color);
 }
 
-/* .address-list {
-  background-color: var(--bg-footer-color);
-}
 footer .logo-studio {
   color: var(--bg-white-color);
 }
@@ -82,4 +83,8 @@ footer .logo-studio {
 .address-list .link:hover,
 .address-list .link:focus {
   color: var(--link-text-color);
-} */
+}
+.address-list .map:hover,
+.address-list .map:focus {
+  color: var(--link-text-color);
+}
