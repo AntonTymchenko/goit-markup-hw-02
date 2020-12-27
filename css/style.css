@@ -31,11 +31,18 @@ body {
   list-style: none;
 }
 /* сайт нав */
+
 .site-nav .link {
   color: var(--title-text-color);
 }
+
 .site-nav .link:hover,
 .site-nav .link:focus {
+  color: var(--active-text-color);
+}
+
+/* для определения текущегоцвета страницы на которой находимся в данныъ момент */
+.site-nav .link.current {
   color: var(--active-text-color);
 }
 
@@ -56,6 +63,7 @@ body {
 .feature-list .title {
   color: var(--title-text-color);
 }
+/* BUTTON */
 .button {
   color: var(--main-white-color);
   background-color: var(--active-text-color);
