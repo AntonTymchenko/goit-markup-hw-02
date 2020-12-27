@@ -1,0 +1,90 @@
+/*вторичный текста черный  = #212121*/
+/*цвет основного цвет сероватый =  #757575*/
+/*цвет активности синий =#2196F3*/
+/* цвет фторичного фона серый = #e5e5e5 */
+:root {
+  --main-text-color: #757575;
+  --title-text-color: #212121;
+  --active-text-color: #2196f3;
+  --main-white-color: #ffffff;
+  --footer-bg-color: #2f303a;
+}
+
+body {
+  background-color: var(--main-white-color);
+  color: var(--main-text-color); /*задаем основной цвеи текста*/
+}
+/* стили для логотипа */
+.logo {
+  color: var(--title-text-color);
+  text-decoration: none;
+}
+.logo-web {
+  color: var(--active-text-color);
+}
+.logo .logo-studio:hover,
+.logo .logo-studio:focus {
+  color: var(--active-text-color);
+}
+.list {
+  /*сброс точек в списках*/
+  list-style: none;
+}
+/* сайт нав */
+.site-nav .link {
+  color: var(--title-text-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--active-text-color);
+}
+
+/* address-nav tel email */
+.address-nav .link {
+  color: var(--main-text-color);
+  text-decoration: none;
+}
+.address-nav .link:hover,
+.address-nav .link:focus {
+  color: var(--active-text-color);
+}
+/* section */
+.section-title {
+  color: var(--title-text-color);
+}
+/* feature */
+.feature-list .title {
+  color: var(--title-text-color);
+}
+.button {
+  color: var(--main-white-color);
+  background-color: var(--active-text-color);
+}
+/* footer */
+.footer {
+  color: var(--main-white-color);
+  background-color: var(--footer-bg-color);
+}
+.footer .logo-studio {
+  color: var(--main-white-color);
+}
+.footer .address-list {
+  text-decoration: none;
+}
+.footer .link {
+  color: var(--main-text-color);
+}
+.footer .link:hover,
+.footer .link:focus {
+  color: var(--active-text-color);
+}
+.address-list {
+  list-style: none;
+}
+.address-list .map {
+  color: var(--main-white-color);
+}
+.address-list .map:hover,
+.address-list .map:focus {
+  color: var(--active-text-color);
+}

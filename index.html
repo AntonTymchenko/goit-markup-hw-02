@@ -4,56 +4,66 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home work</title>
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <header>
       <!--Шапка страницы и навигация-->
       <nav>
-        <a href="./index.html">WebStudio</a>
-        <ul>
-          <li><a href="#" lang="ru">Студия</a></li>
-          <li><a href="#" lang="ru">Портфолио</a></li>
-          <li><a href="#" lang="ru">Контакты</a></li>
+        <a href="./index.html" class="logo"
+          ><span class="logo-web">Web</span
+          ><span class="logo-studio">Studio</span></a
+        >
+        <ul class="site-nav list">
+          <li><a href="#" lang="ru" class="link">Студия</a></li>
+          <li><a href="#" lang="ru" class="link">Портфолио</a></li>
+          <li><a href="#" lang="ru" class="link">Контакты</a></li>
         </ul>
       </nav>
-      <ul>
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111"> +38 096 111 11 11 </a></li>
+      <ul class="address-nav list">
+        <li>
+          <a href="mailto:info@devstudio.com" class="link"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li>
+          <a href="tel:+380961111111" class="link"> +38 096 111 11 11 </a>
+        </li>
       </ul>
     </header>
     <main>
       <!--Основной контент-->
       <section>
-        <!--Секция для заказа услуги-->
+        <!--Секция для заказа услуги hero-->
         <h1 lang="ru">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-        <button type="button" lang="ru">Заказать услугу</button>
+        <button type="button" lang="ru" class="button">Заказать услугу</button>
       </section>
-      <section>
-        <!--Секция внимание к деталям пунктуальность и т.д.-->
-        <ul>
+      <section class="section">
+        <!--Секция внимание к деталям пунктуальность и т.д. features-->
+        <ul class="feature-list">
           <li>
-            <h3 lang="ru">Внимание к деталям</h3>
+            <h3 lang="ru" class="title">Внимание к деталям</h3>
             <p lang="ru">
               Идейные соображения, а также начало повседневной работы по
               формированию позиции.
             </p>
           </li>
           <li>
-            <h3 lang="ru">Пунктуальность</h3>
+            <h3 lang="ru" class="title">Пунктуальность</h3>
             <p lang="ru">
               Задача организации, в особенности же рамки и место обучения кадров
               влечет за собой.
             </p>
           </li>
           <li>
-            <h3 lang="ru">Планирование</h3>
+            <h3 lang="ru" class="title">Планирование</h3>
             <p lang="ru">
               Равным образом консультация с широким активом в значительной
               степени обуславливает.
             </p>
           </li>
           <li>
-            <h3 lang="ru">Современные технологии</h3>
+            <h3 lang="ru" class="title">Современные технологии</h3>
             <p lang="ru">
               Значимость этих проблем настолько очевидна, что реализация
               плановых заданий.
@@ -61,9 +71,9 @@
           </li>
         </ul>
       </section>
-      <section>
+      <section class="section">
         <!--Секция с фото девайсов-->
-        <h2 lang="ru">Чем мы занимаемся</h2>
+        <h2 lang="ru" class="section-title">Чем мы занимаемся</h2>
         <ul>
           <li>
             <img src="./img/keyboard.jpg" width="370" alt="клавиатура" />
@@ -76,18 +86,18 @@
           </li>
         </ul>
       </section>
-      <section>
+      <section class="section">
         <!--Секция наша команда-->
-        <h2 lang="ru">Наша команда</h2>
+        <h2 lang="ru" class="section-title">Наша команда</h2>
         <ul>
           <li>
             <img src="./img/igor.jpg" width="270" alt="игорь" />
-            <h3 lang="ru">Игорь Демьяненко</h3>
+            <h3 lang="ru" class="section-title">Игорь Демьяненко</h3>
             <p lang="ru">Product Designer</p>
           </li>
           <li>
             <img src="./img/olga.jpg" width="270" alt="ольга" />
-            <h3 lang="ru">Ольга Репина</h3>
+            <h3 lang="ru" class="section-title">Ольга Репина</h3>
             <p lang="ru">Frontend Developer</p>
           </li>
           <li>
@@ -97,28 +107,43 @@
               height="260"
               alt="николай"
             />
-            <h3 lang="ru">Николай Тарасов</h3>
+            <h3 lang="ru" class="section-title">Николай Тарасов</h3>
             <p>Marketing</p>
           </li>
           <li>
             <img src="./img/mosha.jpg" width="270" alt="михаил" />
-            <h3 lang="ru">Михаил Ермаков</h3>
+            <h3 lang="ru" class="section-title">Михаил Ермаков</h3>
             <p>UI Designer</p>
           </li>
         </ul>
       </section>
     </main>
-    <footer>
-      <a href="#">WebStudio</a>
-      <address>
-        <ul>
+    <footer class="footer">
+      <a href="#" class="logo"
+        ><span class="logo-web">Web</span
+        ><span class="logo-studio">Studio</span></a
+      >
+      <address class="address">
+        <ul class="address-list">
           <li lang="ru">
-            <a href="https://goo.gl/maps/rWyvSTfLw16qYs6XA" target="_blank">
+            <a
+              href="https://goo.gl/maps/rWyvSTfLw16qYs6XA"
+              target="_blank"
+              class="address-list map"
+            >
               г. Киев, пр-т Леси Украинки, 26</a
             >
           </li>
-          <li><a href="mailto:info@example.com">info@example.com</a></li>
-          <li><a href="tel:+380991111111">+38 099 111 11 11</a></li>
+          <li>
+            <a href="mailto:info@example.com" class="address-list link"
+              >info@example.com</a
+            >
+          </li>
+          <li>
+            <a href="tel:+380991111111" class="address-list link"
+              >+38 099 111 11 11</a
+            >
+          </li>
         </ul>
       </address>
     </footer>
