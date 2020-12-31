@@ -27,10 +27,7 @@ header .logo {
 .logo .logo-web {
   color: var(--link-text-color);
 }
-.logo .logo-studio:hover,
-.logo .logo-studio:focus {
-  color: var(--link-text-color);
-}
+
 .logo {
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -75,6 +72,10 @@ header .link {
 .hero .hero-title {
   color: var(--bg-white-color);
   text-align: center;
+  font-family: Roboto;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.3;
 }
 .hero .button {
   background-color: var(--link-text-color);
@@ -165,13 +166,14 @@ header .link {
   line-height: 1.6;
   background-color: #f5f4fa;
 }
+.button-portfolio:hover,
+.button-portfolio:focus {
+  background-color: var(--link-text-color);
+  color: var(--bg-white-color);
+}
 .portfolio .description {
   font-size: 16px;
   line-height: 1.8;
   color: var(--main-text-color);
   text-decoration: none;
-}
-.portfolio.link .text-link:hover {
-  text-decoration: underline;
-  color: var(--link-text-color);
 }
